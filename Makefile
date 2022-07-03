@@ -14,5 +14,8 @@ $(ODIR)/%.o : $(SDIR)/%.c
 $(OUTDIR)/main : $(OBJS)
 	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
 
+run:
+	$(OUTDIR)/$(OUT)
+
 clean:
 	rm $(ODIR)/*.o $(OUTDIR)/*
