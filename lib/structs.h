@@ -1,7 +1,7 @@
 #ifndef STRUCTS_H
 #define STRUCTS_H
 
-#define NB_CMDS 13
+#define NB_CMDS 14
 
 typedef enum PREFIX
 {
@@ -16,6 +16,7 @@ typedef enum PREFIX
     DER,
     INT,
     EVAL,
+    HELP,
     CLR,
     EXIT
 } PREFIX;

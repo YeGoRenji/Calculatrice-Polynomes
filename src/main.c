@@ -19,7 +19,7 @@
 
 int operation(char *cmd)
 {
-    const char commands[NB_CMDS][8] = {"LET", "SET", "DISPLAY", "ADD", "SUB", "MUL", "POW", "AFFECT", "DER", "INT", "EVAL", "CLR", "EXIT"};
+    const char commands[NB_CMDS][8] = {"LET", "SET", "DISPLAY", "ADD", "SUB", "MUL", "POW", "AFFECT", "DER", "INT", "EVAL", "HELP", "CLR", "EXIT"};
     int i = 0;
     for (i = 0; i < NB_CMDS; i++)
         if (strcmp(cmd, commands[i]) == 0)
@@ -318,6 +318,9 @@ int main(void)
                 printf(" Erreur d'operant \n");
             }
             valid = 0;
+            break;
+        case HELP:
+            puts("# Comment utiliser ?\n## LET\nCréation d'un nouveau polynôme :\n\nLET P = X + 1\n\n---\n## SET\nMise à jour d'un polynôme :\n\nSET P = X^2\n \n---\n## DER\nDérivée d'un polynôme :\n\nDER P\n\n---\n## INT\nIntégration d'un polynôme :\n\nINT P\n\n---\n## EVAL\nEvaluation d'un polynôme :\n\nEVAL P for X = 5\n\n---\n## ADD\nAddition de deux polynômes : \n\nADD P, Q\n\n---\n## SUB\nSoustraction de deux polynômes : \n\nSUB P, Q\n\n---\n## MUL\nMultiplication de deux polynômes : \n\nMUL P, Q\n\n---\n## POW\nPuissance n ème d'un polynôme :\n\nPOW P, 3\n\n---\n## AFFECT\nAffectation d'un polynôme à un autre :\n \nAFFECT P, Q\n\n---\n## DISPLAY\nAffichage d'un polynôme :\n\nDISPLAY P\n\n---\n## CLR\nNettoyage l'ecran :\n\nCLR\n\n---\n## HELP\nAffichage de manuel :\n\nHELP\n\n---\n## EXIT\nArrêt du programme :\n\nEXIT\n");
             break;
         case CLR:
             Clear();
