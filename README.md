@@ -4,7 +4,7 @@ Projet d'un Mini-shell Calculatrice des polynomes.
 **04 Janvier 2022** \
 Projet d'études à l'ENSA khouribga ( 1er Année Cycle d'ingénieur Genie informatique ).
 
-Réaliser par : **Youssef LYOUSSFI** et **Mohammed MJAHED**.
+Réalisé par : **Youssef LYOUSSFI** et **Mohammed MJAHED**.
 
 Encadré par : **PR. Abdelmajid DARGHAM**
 
