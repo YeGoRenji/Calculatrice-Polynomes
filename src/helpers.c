@@ -8,6 +8,9 @@ void Clear()
 #ifdef linux
     system("clear");
 #endif
+#ifdef __APPLE__
+    system("clear");
+#endif
 }
 
 int pgcd(int a, int b)
