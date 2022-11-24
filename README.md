@@ -9,8 +9,6 @@ Réalisé par : **Youssef LYOUSSFI** et **Mohammed MJAHED**.
 Encadré par : **PR. Abdelmajid DARGHAM**
 
 # Comment configuré ?
-- Executer le bash script `init.sh`. (pour créer les dossier necessaires)
-    - `bin/` et `obj/`.
 - Démarrer `make` pour compiler.
 - Démarrer `make run` pour démarrer le program.
 # Comment utiliser ?
